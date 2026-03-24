@@ -45,7 +45,7 @@ void main() {
     }
 
 
-    HashMap<String, Tanar> tineri;
-    tineri.put(das hyu);
+    HashMap<String, Tanar> tineri= new HashMap<>();;
+    tineri.put("Alin", 19, "Aleea Salciei");
 
 }
