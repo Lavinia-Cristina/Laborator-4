@@ -1,4 +1,4 @@
-package Lab4;
+
 
 public class Tanar {
     private String name;

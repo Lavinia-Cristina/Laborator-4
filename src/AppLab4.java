@@ -1,4 +1,4 @@
-import Lab4.Tanar;
+
 
 void main() {
     HashMap<String, Integer> varste = new HashMap<>();
@@ -45,7 +45,21 @@ void main() {
     }
 
 
-    HashMap<String, Tanar> tineri= new HashMap<>();;
-    tineri.put("Alin", 19, "Aleea Salciei");
+    HashMap<String, Tanar> tineri = new HashMap<>();
 
-}
+
+    for (String nume : varste.keySet()) {
+        Integer varsta = varste.get(nume);
+
+
+        String adresa = adrese.getOrDefault(nume, "Adresa necunoscuta");
+
+        Tanar tanarNou = new Tanar(nume, varsta, adresa);
+        tineri.put(nume, tanarNou);
+
+        System.out.println("Tineri:");
+        for (String name : tineri.keySet()) {
+            Tanar dateTanar = tineri.get(nume);
+            System.out.println("Cheie: " + nume + " -> Valoare: " + dateTanar.toString());
+        }
+    }}
